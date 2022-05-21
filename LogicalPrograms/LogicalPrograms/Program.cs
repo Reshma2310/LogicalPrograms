@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("1. Fibonacci\n2. Perfect Number\n3. Prime Numbers between Range\n4. Reverse a Number\n5. Coupon Number\n6. Stopwatch Simulation\n7. Fewer Notes from Vending Machine\n8. Temperature Conversion\n9. Squartroot");
+Console.WriteLine("1. Fibonacci\n2. Perfect Number\n3. Prime Numbers between Range\n4. Reverse a Number\n5. Coupon Number\n6. Stopwatch Simulation\n7. Fewer Notes from Vending Machine\n8. Temperature Conversion\n9. Squartroot\n10. Convert Decimal to Binary");
 int input = Convert.ToInt32(Console.ReadLine());
 switch(input)
 {
@@ -38,6 +38,10 @@ switch(input)
     case 9:
         LogicalPrograms.SquareRoot root = new LogicalPrograms.SquareRoot();
         root.Square();
+        break;
+    case 10:
+        LogicalPrograms.DecimalToBinary binary = new LogicalPrograms.DecimalToBinary();
+        binary.Binary();
         break;
     default:
         Console.WriteLine("Invalid Input");
