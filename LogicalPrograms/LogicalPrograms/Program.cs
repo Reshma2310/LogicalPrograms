@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("1. Fibonacci\n2. Perfect Number\n3. Prime Numbers between Range\n4. Reverse a Number\n5. Coupon Number\n6. Stopwatch Simulation\n7. Fewer Notes from Vending Machine\n8. Temperature Conversion");
+Console.WriteLine("1. Fibonacci\n2. Perfect Number\n3. Prime Numbers between Range\n4. Reverse a Number\n5. Coupon Number\n6. Stopwatch Simulation\n7. Fewer Notes from Vending Machine\n8. Temperature Conversion\n9. Squartroot");
 int input = Convert.ToInt32(Console.ReadLine());
 switch(input)
 {
@@ -34,6 +34,10 @@ switch(input)
     case 8:
         LogicalPrograms.TemperatureConvertion temperature = new LogicalPrograms.TemperatureConvertion();
         temperature.TempConvert();
+        break;
+    case 9:
+        LogicalPrograms.SquareRoot root = new LogicalPrograms.SquareRoot();
+        root.Square();
         break;
     default:
         Console.WriteLine("Invalid Input");
