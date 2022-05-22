@@ -10,7 +10,7 @@ namespace LogicalPrograms
     {
         public void Swapping()
         {
-            Console.WriteLine("Enter a number to convert it to Binary");
+            Console.WriteLine("Enter a number greater than 100 to convert it to Binary");
             int num = Convert.ToInt32(Console.ReadLine());
             string binary = Convert.ToString(num, 2);
             Console.WriteLine(binary);
